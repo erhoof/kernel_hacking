@@ -1,6 +1,8 @@
 /*
  * hello-1.c - The simplest kernel module.
  */
+#define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
+
 #include <linux/module.h> /* Needed by all modules */
 #include <linux/printk.h> /* Needed for pr_info() */
 
