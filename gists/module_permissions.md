@@ -1,5 +1,7 @@
 # Example. Setting permissions for module created devices
 
+It is important to note that the standard roles of read and write are reversed in the kernel. Read functions are used for output, whereas write functions are used for input. The reason for that is that read and write refer to the user’s point of view — if a process reads something from the kernel, then the kernel needs to output it, and if a process writes something to the kernel, then the kernel receives it as input.
+
 ``` cpp
 #include <linux/miscdevice.h>
 
