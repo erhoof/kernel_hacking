@@ -1,6 +1,6 @@
 # Example. Setting permissions for module created devices
 
-```
+``` cpp
 #include <linux/miscdevice.h>
 
 static struct miscdevice my_module_cnf = {
